@@ -26,6 +26,9 @@
   --header-font: "EB Garamond", serif;
   --body-font: "Space Grotesk", sans-serif;
   --display-font: "EB Garamond", serif;
+  --control-flat-bg: color-mix(in srgb, var(--bg-elev) 92%, transparent);
+  --control-flat-hover: color-mix(in srgb, var(--accent-soft) 45%, var(--bg-elev));
+  --control-flat-active: color-mix(in srgb, var(--accent-soft) 65%, var(--bg-elev));
 }
 
 * {
@@ -115,11 +118,11 @@ h2 {
   padding: 0.25rem;
   border-radius: 0.4rem;
   border: 1px solid var(--border-soft);
-  background: color-mix(in srgb, var(--bg-elev) 92%, transparent);
+  background: var(--control-flat-bg);
 }
 
 .mode-button {
-  border: 1px solid transparent;
+  border: 1px solid var(--border-soft);
   border-radius: 0.35rem;
   padding: 0.38rem 0.78rem;
   color: var(--text-muted);
@@ -134,13 +137,14 @@ h2 {
 
 .mode-button:hover {
   color: var(--text-main);
-  background: color-mix(in srgb, var(--accent-soft) 55%, transparent);
+  border-color: color-mix(in srgb, var(--accent-main) 34%, transparent);
+  background: var(--control-flat-hover);
 }
 
 .mode-button[aria-pressed="true"] {
   color: var(--text-main);
   border-color: var(--badge-border);
-  background: linear-gradient(180deg, color-mix(in srgb, var(--bg-elev) 92%, transparent), color-mix(in srgb, var(--accent-soft) 70%, transparent));
+  background: var(--control-flat-active);
 }
 
 .mode-button:focus-visible,
@@ -160,13 +164,13 @@ h2 {
   padding: 0.52rem 0.96rem;
   text-decoration: none;
   font-weight: 700;
-  background: linear-gradient(180deg, color-mix(in srgb, var(--bg-elev) 94%, transparent), color-mix(in srgb, var(--accent-soft) 34%, transparent));
+  background: var(--control-flat-bg);
   transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
 }
 
 .btn-link:hover {
   border-color: color-mix(in srgb, var(--accent-main) 42%, transparent);
-  background: color-mix(in srgb, var(--accent-soft) 40%, var(--bg-elev));
+  background: var(--control-flat-hover);
 }
 
 .section-header {
@@ -312,7 +316,7 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.3rem;
+  border-radius: 0.18rem;
   padding: 0.14rem 0.52rem;
   font-size: 0.75rem;
   line-height: 1.26;
@@ -329,7 +333,7 @@ h2 {
 
 .count-badge {
   border: 1px solid var(--badge-border);
-  background: var(--badge-bg);
+  background: color-mix(in srgb, var(--badge-bg) 84%, var(--bg-elev));
   color: var(--text-main);
 }
 
@@ -563,6 +567,10 @@ code {
   gap: 0.75rem;
 }
 
+#history-summary {
+  margin-top: 0.65rem;
+}
+
 .history-summary-heading {
   display: grid;
   gap: 0.15rem;
@@ -692,7 +700,7 @@ code {
 }
 
 .delta-chip {
-  border-radius: 0.25rem;
+  border-radius: 0.14rem;
   padding: 0.1rem 0.46rem;
   font-size: 0.74rem;
   font-weight: 700;
