@@ -50,8 +50,8 @@ html[data-mode="light"] {
   --tooltip-bg: #3b2320;
   --tooltip-text: #f8eee4;
   --tooltip-border: rgba(236, 193, 177, 0.38);
-  --shadow-soft: 0 2px 8px rgba(58, 34, 27, 0.09);
-  --shadow-card: 0 2px 8px rgba(58, 34, 27, 0.08);
+  --shadow-soft: 0 1px 2px rgba(58, 34, 27, 0.08);
+  --shadow-card: 0 1px 2px rgba(58, 34, 27, 0.07);
 }
 
 html[data-mode="light"] body {
@@ -84,8 +84,8 @@ html[data-mode="dark"] {
   --tooltip-bg: #f2e2b9;
   --tooltip-text: #2b1c12;
   --tooltip-border: rgba(186, 143, 54, 0.56);
-  --shadow-soft: 0 3px 12px rgba(0, 0, 0, 0.25);
-  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.24);
+  --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.18);
 }
 
 html[data-mode="dark"] body {
@@ -96,7 +96,7 @@ html[data-mode="dark"] body {
 }
 
 html[data-mode="dark"] .site-header {
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.26);
+  box-shadow: var(--shadow-soft);
 }
 
 html[data-mode="dark"] .btn-link {

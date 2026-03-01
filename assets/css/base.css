@@ -21,8 +21,8 @@
   --tooltip-bg: #10253d;
   --tooltip-text: #eef6ff;
   --tooltip-border: rgba(181, 224, 255, 0.38);
-  --shadow-soft: 0 3px 10px rgba(41, 24, 20, 0.08);
-  --shadow-card: 0 2px 8px rgba(41, 24, 20, 0.07);
+  --shadow-soft: 0 1px 3px rgba(41, 24, 20, 0.06);
+  --shadow-card: 0 1px 2px rgba(41, 24, 20, 0.05);
   --header-font: "EB Garamond", serif;
   --body-font: "Space Grotesk", sans-serif;
   --display-font: "EB Garamond", serif;
@@ -65,7 +65,7 @@ a {
   padding: 1rem 1.25rem;
   background: linear-gradient(130deg, color-mix(in srgb, var(--bg-elev) 90%, transparent), color-mix(in srgb, var(--bg-accent) 36%, transparent));
   border: 1px solid var(--border-soft);
-  border-radius: 1.2rem;
+  border-radius: 0.45rem;
   box-shadow: var(--shadow-soft);
 }
 
@@ -113,14 +113,14 @@ h2 {
   align-items: center;
   gap: 0.18rem;
   padding: 0.25rem;
-  border-radius: 999px;
+  border-radius: 0.4rem;
   border: 1px solid var(--border-soft);
   background: color-mix(in srgb, var(--bg-elev) 92%, transparent);
 }
 
 .mode-button {
   border: 1px solid transparent;
-  border-radius: 999px;
+  border-radius: 0.35rem;
   padding: 0.38rem 0.78rem;
   color: var(--text-muted);
   background: transparent;
@@ -156,7 +156,7 @@ h2 {
   justify-content: center;
   gap: 0.32rem;
   border: 1px solid var(--border-soft);
-  border-radius: 999px;
+  border-radius: 0.35rem;
   padding: 0.52rem 0.96rem;
   text-decoration: none;
   font-weight: 700;
@@ -188,7 +188,7 @@ h2 {
 }
 
 .panel {
-  border-radius: 0.95rem;
+  border-radius: 0.4rem;
   border: 1px solid;
   padding: 0.78rem 0.95rem;
 }
@@ -229,7 +229,7 @@ h2 {
   position: relative;
   padding: 0.9rem 0.95rem 0.95rem;
   border: 1px solid var(--border-soft);
-  border-radius: 1rem;
+  border-radius: 0.45rem;
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg-card) 96%, transparent), color-mix(in srgb, var(--bg-elev) 82%, transparent));
   box-shadow: var(--shadow-card);
   display: grid;
@@ -312,7 +312,7 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
+  border-radius: 0.3rem;
   padding: 0.14rem 0.52rem;
   font-size: 0.75rem;
   line-height: 1.26;
@@ -370,7 +370,7 @@ h2 {
 .gem-swatch {
   width: 0.74rem;
   height: 0.74rem;
-  border-radius: 999px;
+  border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.24);
   flex: 0 0 auto;
 }
@@ -427,7 +427,7 @@ h2 {
 
 .floating-tooltip__body {
   padding: 0.56rem 0.66rem;
-  border-radius: 0.62rem;
+  border-radius: 0.25rem;
   background: var(--tooltip-bg);
   color: var(--tooltip-text);
   border: 1px solid var(--tooltip-border);
@@ -466,7 +466,7 @@ h2 {
 
 .tier-section {
   border: 1px solid var(--border-soft);
-  border-radius: 1rem;
+  border-radius: 0.45rem;
   padding: 0.88rem 0.96rem;
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg-card) 95%, transparent), color-mix(in srgb, var(--bg-elev) 76%, transparent));
   box-shadow: var(--shadow-soft);
@@ -495,7 +495,7 @@ h2 {
 
 .rule-card {
   border: 1px dashed color-mix(in srgb, var(--border-soft) 82%, transparent);
-  border-radius: 0.77rem;
+  border-radius: 0.35rem;
   padding: 0.67rem 0.74rem;
   display: grid;
   gap: 0.34rem;
@@ -555,7 +555,7 @@ code {
 
 .history-summary-panel {
   border: 1px solid var(--border-soft);
-  border-radius: 1rem;
+  border-radius: 0.45rem;
   padding: 0.8rem 0.9rem;
   background: color-mix(in srgb, var(--bg-elev) 88%, transparent);
   box-shadow: var(--shadow-soft);
@@ -576,7 +576,7 @@ code {
 
 .summary-card {
   border: 1px solid var(--border-soft);
-  border-radius: 0.8rem;
+  border-radius: 0.35rem;
   padding: 0.6rem 0.65rem;
   background: color-mix(in srgb, var(--bg-card) 90%, transparent);
   display: grid;
@@ -669,7 +669,7 @@ code {
   gap: 0.55rem;
   padding: 0.28rem 0.35rem;
   border: 1px solid color-mix(in srgb, var(--border-soft) 70%, transparent);
-  border-radius: 0.55rem;
+  border-radius: 0.3rem;
   background: color-mix(in srgb, var(--bg-elev) 82%, transparent);
 }
 
@@ -692,7 +692,7 @@ code {
 }
 
 .delta-chip {
-  border-radius: 999px;
+  border-radius: 0.25rem;
   padding: 0.1rem 0.46rem;
   font-size: 0.74rem;
   font-weight: 700;
