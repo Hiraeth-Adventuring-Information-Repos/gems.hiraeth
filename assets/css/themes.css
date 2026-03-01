@@ -1,0 +1,113 @@
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.player-card,
+.tier-section {
+  animation: fadeSlideIn 340ms ease both;
+}
+
+.player-card:nth-child(2n) {
+  animation-delay: 30ms;
+}
+
+.player-card:nth-child(3n) {
+  animation-delay: 60ms;
+}
+
+.player-card:nth-child(4n) {
+  animation-delay: 90ms;
+}
+
+html[data-mode="light"] {
+  --bg-main: #f4eadc;
+  --bg-accent: #ead7c2;
+  --bg-elev: #fbf4ea;
+  --bg-card: rgba(251, 244, 234, 0.94);
+  --text-main: #2f2019;
+  --text-muted: #73564a;
+  --border-soft: rgba(112, 69, 53, 0.25);
+  --border-strong: rgba(86, 45, 36, 0.38);
+  --accent-main: #8a3f3a;
+  --accent-strong: #6d2f2c;
+  --accent-soft: rgba(138, 63, 58, 0.2);
+  --warning-bg: #f6e8cd;
+  --warning-text: #6a4600;
+  --error-bg: #f4d9d4;
+  --error-text: #7a2620;
+  --clear-gem: #e2d6c7;
+  --clear-gem-border: #a48672;
+  --badge-bg: rgba(138, 63, 58, 0.1);
+  --badge-border: rgba(138, 63, 58, 0.28);
+  --tooltip-bg: #3b2320;
+  --tooltip-text: #f8eee4;
+  --tooltip-border: rgba(236, 193, 177, 0.38);
+  --shadow-soft: 0 2px 8px rgba(58, 34, 27, 0.09);
+  --shadow-card: 0 2px 8px rgba(58, 34, 27, 0.08);
+}
+
+html[data-mode="light"] body {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(162, 88, 75, 0.16), transparent 34%),
+    radial-gradient(circle at 88% 16%, rgba(187, 145, 122, 0.18), transparent 36%),
+    linear-gradient(155deg, #f7eee3, #efdfcc 54%, #f5eadc);
+}
+
+html[data-mode="dark"] {
+  --bg-main: #1a1224;
+  --bg-accent: #2a1b3a;
+  --bg-elev: #241732;
+  --bg-card: rgba(41, 26, 56, 0.9);
+  --text-main: #f3ead3;
+  --text-muted: #c9b98d;
+  --border-soft: rgba(206, 171, 89, 0.3);
+  --border-strong: rgba(224, 189, 104, 0.45);
+  --accent-main: #d4ac55;
+  --accent-strong: #efc977;
+  --accent-soft: rgba(212, 172, 85, 0.22);
+  --warning-bg: #524118;
+  --warning-text: #ffe6aa;
+  --error-bg: #5b2532;
+  --error-text: #ffd8e2;
+  --clear-gem: #9f8ab8;
+  --clear-gem-border: #ccb56e;
+  --badge-bg: rgba(212, 172, 85, 0.18);
+  --badge-border: rgba(224, 189, 104, 0.4);
+  --tooltip-bg: #f2e2b9;
+  --tooltip-text: #2b1c12;
+  --tooltip-border: rgba(186, 143, 54, 0.56);
+  --shadow-soft: 0 3px 12px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.24);
+}
+
+html[data-mode="dark"] body {
+  background:
+    radial-gradient(circle at 16% 9%, rgba(109, 77, 150, 0.3), transparent 36%),
+    radial-gradient(circle at 82% 14%, rgba(217, 172, 79, 0.14), transparent 34%),
+    linear-gradient(160deg, #1d1328, #170f21 54%, #241537);
+}
+
+html[data-mode="dark"] .site-header {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.26);
+}
+
+html[data-mode="dark"] .btn-link {
+  border-color: color-mix(in srgb, var(--border-soft) 95%, transparent);
+}
+
+html[data-mode="dark"] .diamond {
+  border-color: color-mix(in srgb, var(--gem-color, #d0d0d0) 40%, #d8b86c);
+  box-shadow: 0 0 0 1px rgba(250, 232, 190, 0.14) inset;
+}
+
+html[data-mode="dark"] .diamond.empty {
+  opacity: 0.9;
+}

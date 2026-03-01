@@ -1,0 +1,423 @@
+{
+  "meta": {
+    "campaignName": "Hiraeth Gemstone Tracker",
+    "version": 2,
+    "updatedAt": "2026-03-01T18:00:00Z",
+    "capModel": {
+      "clearMax": 3,
+      "coloredTotalMax": 3
+    }
+  },
+  "gems": [
+    {
+      "id": "gem_minor_healing",
+      "displayColorName": "Orange",
+      "colorHex": "#F28C28",
+      "name": "Gem of Minor Healing",
+      "cost": 3,
+      "shortEffect": "Restore 1d8 + 4 hit points.",
+      "fullEffect": "Restores 1d8 + 4 hit points when used."
+    },
+    {
+      "id": "gem_swiftness",
+      "displayColorName": "Super Light Blue",
+      "colorHex": "#AEEBFF",
+      "name": "Gem of Swiftness",
+      "cost": 3,
+      "shortEffect": "Gain +10 feet of movement for 1 minute.",
+      "fullEffect": "Grants an additional 10 feet of movement for one minute."
+    },
+    {
+      "id": "gem_fortitude",
+      "displayColorName": "Dark Red",
+      "colorHex": "#7A1E1E",
+      "name": "Gem of Fortitude",
+      "cost": 3,
+      "shortEffect": "Gain temporary HP (1d12 + CON mod).",
+      "fullEffect": "Grants temporary hit points equal to 1d12 + the player's Constitution modifier."
+    },
+    {
+      "id": "gem_invulnerability",
+      "displayColorName": "Neon Green",
+      "colorHex": "#39FF14",
+      "name": "Gem of Invulnerability",
+      "cost": 6,
+      "shortEffect": "Gain +10 AC and +10 saves for 2 rounds.",
+      "fullEffect": "When used, the player gets a significant temporary boost to defense, with +10 to AC and saving throws for two rounds."
+    },
+    {
+      "id": "gem_insight",
+      "displayColorName": "Dark Purple",
+      "colorHex": "#4B286D",
+      "name": "Gem of Insight",
+      "cost": 6,
+      "shortEffect": "Ask the DM one truthful question.",
+      "fullEffect": "Players can trade this gem with the DM to get a truthful answer to any one question."
+    },
+    {
+      "id": "gem_courage",
+      "displayColorName": "Yellow",
+      "colorHex": "#F9D342",
+      "name": "Gem of Courage",
+      "cost": 6,
+      "shortEffect": "Immunity to fear for 1 hour.",
+      "fullEffect": "Grants immunity to fear effects for one hour."
+    },
+    {
+      "id": "gem_aid",
+      "displayColorName": "Dark Green",
+      "colorHex": "#1E5F3A",
+      "name": "Gem of Aid",
+      "cost": 6,
+      "shortEffect": "Summon a powerful helper for 1 hour.",
+      "fullEffect": "Summons an ally for one hour. Example options include Celestial Guardian, Infernal Enforcer, Nature's Champion, Arcane Elemental, Phantasmal Warrior, Divine Healer, Infernal Sage, Ethereal Dragon, Mythic Beast, and Astral Construct. Effects include healing, defensive auras, damage, mobility, scouting, and one-time spell-like boons depending on the summon."
+    },
+    {
+      "id": "gem_exploration",
+      "displayColorName": "Dark Blue",
+      "colorHex": "#1E3F88",
+      "name": "Gem of Exploration",
+      "cost": 6,
+      "shortEffect": "Party gains advantage on Perception and Investigation for 1 real hour.",
+      "fullEffect": "Grants the party advantage on all Wisdom (Perception) and Intelligence (Investigation) checks for the next real life hour, plus possible DM insights."
+    },
+    {
+      "id": "gem_protection",
+      "displayColorName": "Dark Pink",
+      "colorHex": "#C2185B",
+      "name": "Gem of Protection",
+      "cost": 6,
+      "shortEffect": "+2 AC for the entire session.",
+      "fullEffect": "Grants a +2 bonus to AC for the entire session."
+    },
+    {
+      "id": "gem_clarity",
+      "displayColorName": "Light Purple",
+      "colorHex": "#BDA0FF",
+      "name": "Gem of Clarity",
+      "cost": 9,
+      "shortEffect": "Remove one condition for the session.",
+      "fullEffect": "Removes one condition affecting the player (for example blinded, deafened, poisoned) for the entire session."
+    },
+    {
+      "id": "gem_resistance",
+      "displayColorName": "Light Pink",
+      "colorHex": "#FF9ECF",
+      "name": "Gem of Resistance",
+      "cost": 9,
+      "shortEffect": "Gain resistance to one damage type for the session.",
+      "fullEffect": "Grants resistance to one type of damage (player's choice) for the entire session. This can stack but does not grant immunity."
+    },
+    {
+      "id": "gem_power",
+      "displayColorName": "Light Blue",
+      "colorHex": "#7EC8FF",
+      "name": "Gem of Power",
+      "cost": 12,
+      "shortEffect": "One automatic natural 20 per session.",
+      "fullEffect": "Grants an automatic natural 20 on a roll once per session."
+    },
+    {
+      "id": "gem_arcane_momentum",
+      "displayColorName": "Light Yellow",
+      "colorHex": "#FFF08A",
+      "name": "Gem of Arcane Momentum",
+      "cost": 12,
+      "shortEffect": "Either immediate spell slot replacement or one extra action.",
+      "fullEffect": "When used, choose one effect: (1) Spell Slot Replacement: gain one temporary spell slot of any level you can cast, used immediately. (2) Action Surge Enhancement: take one additional action on your turn; if used for casting, you may cast more than one leveled spell that turn."
+    },
+    {
+      "id": "gem_second_chance",
+      "displayColorName": "Off White",
+      "colorHex": "#F5F5EE",
+      "name": "Gem of Second Chance",
+      "cost": 12,
+      "shortEffect": "Survive a fatal encounter this session.",
+      "fullEffect": "Allows the player to survive a fatal encounter, with details revealed later. The character is guaranteed to live through the session."
+    },
+    {
+      "id": "gem_reconstitution",
+      "displayColorName": "Light Yellow",
+      "colorHex": "#FFE99A",
+      "name": "Gem of Reconstitution",
+      "cost": 12,
+      "shortEffect": "Teleport up to 500 miles and restore 2d10 HP.",
+      "fullEffect": "Allows the player to teleport up to 500 miles to a visible location once per session. Also restores 2d10 hit points to the player or a chosen ally within 30 feet at departure or arrival."
+    }
+  ],
+  "players": [
+    {
+      "uuid": "4f9b6ed8-1fd0-4c9a-90f6-6d4152ff0a8d",
+      "initials": "P1",
+      "name": "Player 1",
+      "clearGems": 2,
+      "colored": {
+        "gem_minor_healing": 1,
+        "gem_swiftness": 1,
+        "gem_fortitude": 0,
+        "gem_invulnerability": 0,
+        "gem_insight": 0,
+        "gem_courage": 0,
+        "gem_aid": 0,
+        "gem_exploration": 0,
+        "gem_protection": 0,
+        "gem_clarity": 0,
+        "gem_resistance": 0,
+        "gem_power": 0,
+        "gem_arcane_momentum": 0,
+        "gem_second_chance": 0,
+        "gem_reconstitution": 0
+      },
+      "notes": ""
+    },
+    {
+      "uuid": "fddca911-d78f-4748-b7b5-66cd5e1f6029",
+      "initials": "P2",
+      "name": "Player 2",
+      "clearGems": 3,
+      "colored": {
+        "gem_minor_healing": 0,
+        "gem_swiftness": 0,
+        "gem_fortitude": 2,
+        "gem_invulnerability": 0,
+        "gem_insight": 0,
+        "gem_courage": 0,
+        "gem_aid": 0,
+        "gem_exploration": 0,
+        "gem_protection": 0,
+        "gem_clarity": 0,
+        "gem_resistance": 0,
+        "gem_power": 0,
+        "gem_arcane_momentum": 0,
+        "gem_second_chance": 0,
+        "gem_reconstitution": 0
+      },
+      "notes": ""
+    },
+    {
+      "uuid": "64ec1522-bf95-4860-8f6b-71f9f919f9e3",
+      "initials": "P3",
+      "name": "Player 3",
+      "clearGems": 0,
+      "colored": {
+        "gem_minor_healing": 0,
+        "gem_swiftness": 0,
+        "gem_fortitude": 0,
+        "gem_invulnerability": 0,
+        "gem_insight": 0,
+        "gem_courage": 0,
+        "gem_aid": 0,
+        "gem_exploration": 0,
+        "gem_protection": 0,
+        "gem_clarity": 0,
+        "gem_resistance": 0,
+        "gem_power": 1,
+        "gem_arcane_momentum": 0,
+        "gem_second_chance": 0,
+        "gem_reconstitution": 0
+      },
+      "notes": ""
+    },
+    {
+      "uuid": "fc18d210-c919-4291-a6a9-a94740c7dc4b",
+      "initials": "P4",
+      "name": "Player 4",
+      "clearGems": 1,
+      "colored": {
+        "gem_minor_healing": 0,
+        "gem_swiftness": 0,
+        "gem_fortitude": 0,
+        "gem_invulnerability": 0,
+        "gem_insight": 0,
+        "gem_courage": 0,
+        "gem_aid": 1,
+        "gem_exploration": 0,
+        "gem_protection": 1,
+        "gem_clarity": 0,
+        "gem_resistance": 0,
+        "gem_power": 0,
+        "gem_arcane_momentum": 0,
+        "gem_second_chance": 0,
+        "gem_reconstitution": 0
+      },
+      "notes": ""
+    },
+    {
+      "uuid": "ee25aa9d-f6d9-49fa-b70f-4ef468f89149",
+      "initials": "P5",
+      "name": "Player 5",
+      "clearGems": 2,
+      "colored": {
+        "gem_minor_healing": 0,
+        "gem_swiftness": 0,
+        "gem_fortitude": 0,
+        "gem_invulnerability": 0,
+        "gem_insight": 1,
+        "gem_courage": 0,
+        "gem_aid": 0,
+        "gem_exploration": 0,
+        "gem_protection": 0,
+        "gem_clarity": 0,
+        "gem_resistance": 0,
+        "gem_power": 0,
+        "gem_arcane_momentum": 0,
+        "gem_second_chance": 0,
+        "gem_reconstitution": 0
+      },
+      "notes": ""
+    },
+    {
+      "uuid": "960cfef6-73fe-4746-bb80-5259f72cc73f",
+      "initials": "P6",
+      "name": "Player 6",
+      "clearGems": 1,
+      "colored": {
+        "gem_minor_healing": 0,
+        "gem_swiftness": 0,
+        "gem_fortitude": 0,
+        "gem_invulnerability": 0,
+        "gem_insight": 0,
+        "gem_courage": 0,
+        "gem_aid": 0,
+        "gem_exploration": 0,
+        "gem_protection": 0,
+        "gem_clarity": 0,
+        "gem_resistance": 0,
+        "gem_power": 0,
+        "gem_arcane_momentum": 0,
+        "gem_second_chance": 1,
+        "gem_reconstitution": 1
+      },
+      "notes": ""
+    },
+    {
+      "uuid": "7109d0ea-a9a8-49f4-8e6f-1f3e2ab4d2d6",
+      "initials": "P7",
+      "name": "Player 7",
+      "clearGems": 0,
+      "colored": {
+        "gem_minor_healing": 0,
+        "gem_swiftness": 0,
+        "gem_fortitude": 0,
+        "gem_invulnerability": 0,
+        "gem_insight": 0,
+        "gem_courage": 1,
+        "gem_aid": 0,
+        "gem_exploration": 1,
+        "gem_protection": 0,
+        "gem_clarity": 1,
+        "gem_resistance": 0,
+        "gem_power": 0,
+        "gem_arcane_momentum": 0,
+        "gem_second_chance": 0,
+        "gem_reconstitution": 0
+      },
+      "notes": ""
+    },
+    {
+      "uuid": "82f4288f-d681-4c25-a34d-f7835fa13b4f",
+      "initials": "P8",
+      "name": "Player 8",
+      "clearGems": 3,
+      "colored": {
+        "gem_minor_healing": 0,
+        "gem_swiftness": 0,
+        "gem_fortitude": 0,
+        "gem_invulnerability": 0,
+        "gem_insight": 0,
+        "gem_courage": 0,
+        "gem_aid": 0,
+        "gem_exploration": 0,
+        "gem_protection": 0,
+        "gem_clarity": 0,
+        "gem_resistance": 0,
+        "gem_power": 0,
+        "gem_arcane_momentum": 0,
+        "gem_second_chance": 0,
+        "gem_reconstitution": 0
+      },
+      "notes": ""
+    }
+  ],
+  "ledger": [
+    {
+      "id": "c130b86e-2f1d-4da8-bf34-d423f5fd8877",
+      "timestamp": "2026-03-01T17:24:00Z",
+      "playerUuid": "4f9b6ed8-1fd0-4c9a-90f6-6d4152ff0a8d",
+      "assetType": "colored",
+      "gemId": "gem_minor_healing",
+      "delta": 1,
+      "note": "Session award",
+      "source": "session"
+    },
+    {
+      "id": "f8e1f98b-d7f1-4482-9f84-f52c381cb5ec",
+      "timestamp": "2026-03-01T19:10:00Z",
+      "playerUuid": "4f9b6ed8-1fd0-4c9a-90f6-6d4152ff0a8d",
+      "assetType": "clear",
+      "delta": -1,
+      "note": "Spent for advantage",
+      "source": "play"
+    },
+    {
+      "id": "3c8b0c34-3fd8-44b4-bf35-143d87f68f24",
+      "timestamp": "2026-03-02T03:20:00Z",
+      "playerUuid": "fddca911-d78f-4748-b7b5-66cd5e1f6029",
+      "assetType": "colored",
+      "gemId": "gem_fortitude",
+      "delta": 2,
+      "note": "Trade-up approved",
+      "source": "trade"
+    },
+    {
+      "id": "cb0d88ee-b03a-4240-b4e8-95c336dd7133",
+      "timestamp": "2026-03-03T02:55:00Z",
+      "playerUuid": "fc18d210-c919-4291-a6a9-a94740c7dc4b",
+      "assetType": "colored",
+      "gemId": "gem_protection",
+      "delta": -1,
+      "note": "Used during boss encounter",
+      "source": "play"
+    },
+    {
+      "id": "9f20f5f0-a2af-4d3b-a8e8-0fa756f2a5eb",
+      "timestamp": "2026-03-03T02:56:00Z",
+      "playerUuid": "fc18d210-c919-4291-a6a9-a94740c7dc4b",
+      "assetType": "colored",
+      "gemId": "gem_aid",
+      "delta": -1,
+      "note": "Companion summon activated",
+      "source": "play"
+    },
+    {
+      "id": "70ad90f7-b6d2-4706-a91d-77ad45ceeaeb",
+      "timestamp": "2026-03-05T01:35:00Z",
+      "playerUuid": "7109d0ea-a9a8-49f4-8e6f-1f3e2ab4d2d6",
+      "assetType": "colored",
+      "gemId": "gem_exploration",
+      "delta": 1,
+      "note": "Reward for scouting objective",
+      "source": "session"
+    },
+    {
+      "id": "bf29dbc6-f5a2-4730-8e96-8dd14e1604dd",
+      "timestamp": "2026-03-05T01:41:00Z",
+      "playerUuid": "7109d0ea-a9a8-49f4-8e6f-1f3e2ab4d2d6",
+      "assetType": "colored",
+      "gemId": "gem_courage",
+      "delta": 1,
+      "note": "Reward for roleplay moment",
+      "source": "session"
+    },
+    {
+      "id": "57627f5c-672b-4d60-9761-95f8d65f89cc",
+      "timestamp": "2026-03-05T01:59:00Z",
+      "playerUuid": "64ec1522-bf95-4860-8f6b-71f9f919f9e3",
+      "assetType": "colored",
+      "gemId": "gem_power",
+      "delta": 1,
+      "note": "Milestone bonus",
+      "source": "bonus"
+    }
+  ]
+}

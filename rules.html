@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" data-mode="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gemstone Rules</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/themes.css">
+  </head>
+  <body data-page="rules">
+    <div class="page-shell rules-shell">
+      <header class="site-header">
+        <div>
+          <p class="eyebrow">Reference</p>
+          <h1>Gemstone Rules Codex</h1>
+          <p class="subhead">Color-first reference by gem cost tier.</p>
+        </div>
+        <div class="header-actions">
+          <div id="color-mode-control" class="mode-toggle" role="group" aria-label="Color mode">
+            <button type="button" class="mode-button" data-mode="auto" aria-pressed="true">Auto</button>
+            <button type="button" class="mode-button" data-mode="light" aria-pressed="false">Light</button>
+            <button type="button" class="mode-button" data-mode="dark" aria-pressed="false">Dark</button>
+          </div>
+          <a class="btn-link" href="./index.html">Back To Tracker</a>
+        </div>
+      </header>
+
+      <section id="global-error" class="panel panel-error hidden" role="alert" aria-live="assertive">
+        <h2>Data Load Error</h2>
+        <p id="global-error-message"></p>
+      </section>
+
+      <section id="global-issues" class="panel panel-warning hidden" aria-live="polite">
+        <h2>Data Warnings</h2>
+        <ul id="global-issues-list"></ul>
+      </section>
+
+      <main>
+        <section id="rules-groups" class="rules-groups" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>
